@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISHITA | Engineered Hardware Solutions</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Configuration for Tailwind to include Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'mishita-blue': '#2563EB', // A strong blue for highlights
+                        'mishita-silver': '#BCCCDC', // Light silver/gray for metallic feel
+                        'mishita-dark': '#1F2937', // Dark gray for text and background contrast
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for the metallic M logo icon */
+        .mishita-icon-m {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ddd, #555, #ddd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            display: inline-block;
+            transform: skewX(-15deg);
+            padding-right: 12px;
+        }
+
+        /* SVG for the blue slash, placed over the 'M' */
+        .mishita-slash {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 100%;
+            z-index: 10;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(to top, rgba(31, 41, 55, 0.95), rgba(31, 41, 55, 0.8)), url('https://placehold.co/1920x800/2563EB/ffffff?text=Engineered+Solutions+Background');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-mishita-dark font-sans">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo Area (Recreating the look from the uploaded logo) -->
+            <div class="flex items-center space-x-2">
+                <div class="relative h-10 w-10">
+                    <!-- Placeholder for the M icon -->
+                    <span class="mishita-icon-m text-5xl">M</span>
+                    <!-- Blue Slash -->
+                    <svg class="mishita-slash absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[15deg]" viewBox="0 0 10 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="5" y1="0" x2="5" y2="100" stroke="#2563EB" stroke-width="4"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-extrabold tracking-tight">MISHITA</h1>
+                    <p class="text-xs text-mishita-blue font-medium tracking-widest uppercase">Engineered Hardware Solutions</p>
+                </div>
+            </div>
+            <!-- Navigation Links (Hidden on small screens, simplified) -->
+            <nav class="hidden sm:flex space-x-6 text-sm font-medium">
+                <a href="#products" class="text-gray-600 hover:text-mishita-blue transition duration-200">Products</a>
+                <a href="#quality" class="text-gray-600 hover:text-mishita-blue transition duration-200">Our Quality</a>
+                <a href="#contact" class="px-4 py-1 border-2 border-mishita-blue text-mishita-blue rounded-full hover:bg-mishita-blue hover:text-white transition duration-200">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-24 sm:py-32">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-5xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                Precision Moves. <span class="text-mishita-blue">Reliability Lasts.</span>
+            </h2>
+            <p class="text-xl max-w-3xl mx-auto mb-8 text-gray-200">
+                We engineer the future of movement and storage, providing high-load, smooth-operation hardware solutions for industrial, commercial, and residential applications.
+            </p>
+            <a href="#products" class="inline-block bg-mishita-blue text-white font-bold py-3 px-8 rounded-lg shadow-xl hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                Explore Our Range
+            </a>
+        </div>
+    </section>
+
+    <!-- Product Showcase (Focusing on Drawer Slides) -->
+    <section id="products" class="py-16 sm:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-center mb-12">Featured Solutions</h3>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Product Card 1: Heavy-Duty Drawer Slide -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transform hover:scale-[1.02] transition duration-300">
+                    <img src="https://placehold.co/600x400/1F2937/ffffff?text=Heavy-Duty+Slides" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1F2937/ffffff?text=Heavy-Duty+Slides';" alt="Heavy Duty Drawer Slide" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">High-Capacity Drawer Slides</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Engineered for extreme loads, these slides provide full extension and silent closing, perfect for industrial storage and filing systems.</p>
+                        <ul class="text-sm space-y-1 text-mishita-dark">
+                            <li class="flex items-center"><span class="text-mishita-blue mr-2">&#9733;</span> Up to 500 lb load rating</li>
+                            <li class="flex items-center"><span class="text-mishita-blue mr-2">&#9733;</span> Full extension mechanism</li>
+                            <li class="flex items-center"><span class="text-mishita-blue mr-2">&#9733;</span> Corrosion-resistant coating</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Soft-Close Cabinet Hinge -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transform hover:scale-[1.02] transition duration-300">
+                    <img src="https://placehold.co/600x400/2563EB/ffffff?text=Soft-Close+Hinges" onerror="this.onerror=null;this.src='https://placehold.co/600x400/2563EB/ffffff?text=Soft-Close+Hinges';" alt="Soft Close Cabinet Hinge" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Damping Soft-Close Hinges</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Eliminate slamming with our integrated hydraulic damping system, ensuring quiet operation and extended cabinet life for premium kitchens.</p>
+                        <ul class="text-sm space-y-1 text-mishita-dark">
+                            <li class="flex items-center"><span class="text-mishita-blue mr-2">&#9733;</span> Integrated hydraulic damper</li>
+                            <li class="flex items-center"><span class="text-mishita-blue mr-2">&#9733;</span> 105-degree opening angle</li>
+                            <li class="flex items-center"><span class="text-mishita-blue mr-2">&#9733;</span> Quick-release clip-on design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Modular Connection System -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transform hover:scale-[1.02] transition duration-300">
+                    <img src="https://placehold.co/600x400/BCCCDC/1F2937?text=Modular+Connectors" onerror="this.onerror=null;this.src='https://placehold.co/600x400/BCCCDC/1F2937?text=Modular+Connectors';" alt="Modular Connection System" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Invisible Fastening Connectors</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Create clean, seamless furniture designs with our cam-and-dowel and specialty fastening systems that remain hidden from view.</p>
+                        <ul class="text-sm space-y-1 text-mishita-dark">
+                            <li class="flex items-center"><span class="text-mishita-blue mr-2">&#9733;</span> Tool-less assembly options</li>
+                            <li class="flex items-center"><span class="text-mishita-blue mr-2">&#9733;</span> High tensile strength</li>
+                            <li class="flex items-center"><span class="text-mishita-blue mr-2">&#9733;</span> Perfect alignment guarantees</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality & Engineering Section -->
+    <section id="quality" class="py-16 sm:py-24 bg-mishita-dark text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-extrabold text-center mb-4">The MISHITA Engineering Difference</h3>
+            <p class="text-center text-mishita-silver mb-12 max-w-4xl mx-auto">
+                Our commitment to **Engineered Hardware Solutions** is built on three pillars: Materials Science, Mechanical Precision, and Durability Testing.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-10 text-center">
+                
+                <!-- Pillar 1: Materials -->
+                <div class="p-6 rounded-lg bg-gray-800 shadow-xl">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-mishita-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 18h.01M10 18h.01M6 18h.01M2 12s3-4 10-4 10 4 10 4M2 12l2.323 2.323M20 12l-2.323 2.323"></path></svg>
+                    <h4 class="text-xl font-semibold mb-2">Advanced Materials</h4>
+                    <p class="text-gray-400 text-sm">Utilizing cold-rolled steel and marine-grade stainless options for maximum strength and resistance to rust and wear in any environment.</p>
+                </div>
+
+                <!-- Pillar 2: Precision -->
+                <div class="p-6 rounded-lg bg-gray-800 shadow-xl">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-mishita-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l-2 2h-4v2h4l-2 2h-4v2h4l-2 2h-4v2h4l-2 2h-4v2h4l-2 2h-4v2h4l-2 2h-4v2h4l-2 2h-4v2h4"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19v-6m0 0l-2 2m2-2l2 2m-2-2v-4m0 0l-2-2m2 2l2-2"></path></svg>
+                    <h4 class="text-xl font-semibold mb-2">Micron-Level Tolerance</h4>
+                    <p class="text-gray-400 text-sm">Automated production lines ensure every component fits with perfect precision, guaranteeing smooth, silent, and reliable operation every time.</p>
+                </div>
+
+                <!-- Pillar 3: Durability -->
+                <div class="p-6 rounded-lg bg-gray-800 shadow-xl">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-mishita-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h4 class="text-xl font-semibold mb-2">Tested for Life Cycles</h4>
+                    <p class="text-gray-400 text-sm">All products undergo rigorous cycle testing, exceeding industry standards to ensure a 50,000+ opening and closing lifecycle guarantee.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-3xl font-bold mb-4">Ready to Upgrade Your Hardware?</h3>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+                Connect with our engineering team to discuss custom solutions, bulk orders, or to receive our detailed product catalog.
+            </p>
+            
+            <a href="mailto:info@mishita.com" class="inline-block bg-mishita-dark text-white font-bold py-3 px-8 rounded-lg shadow-xl hover:bg-gray-700 transition duration-300 transform hover:scale-105 mr-4">
+                Email Our Team
+            </a>
+            <a href="tel:+1234567890" class="inline-block text-mishita-dark border-2 border-mishita-dark font-bold py-3 px-8 rounded-lg hover:bg-mishita-dark hover:text-white transition duration-300 transform hover:scale-105">
+                Call Us Today
+            </a>
+
+            <!-- Placeholder Form (Simplified for static template) -->
+            <div class="mt-12 max-w-lg mx-auto p-6 bg-white rounded-xl shadow-2xl border-t-4 border-mishita-blue">
+                <form onsubmit="event.preventDefault(); showMessage('Thank you! We will be in touch shortly.');">
+                    <h4 class="text-xl font-semibold mb-6">Quick Inquiry</h4>
+                    <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mishita-blue" required>
+                    <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mishita-blue" required>
+                    <textarea placeholder="Your Message / Specific Product Interest" rows="3" class="w-full p-3 mb-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mishita-blue" required></textarea>
+                    <button type="submit" class="w-full bg-mishita-blue text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition duration-200">
+                        Send Inquiry
+                    </button>
+                    <div id="message-box" class="mt-4 text-center text-sm font-medium text-green-600 hidden"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="mb-2 text-sm">&copy; 2025 MISHITA. All rights reserved. | Engineered Hardware Solutions</p>
+            <div class="flex justify-center space-x-4 text-xs">
+                <a href="#" class="hover:text-mishita-blue">Privacy Policy</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="hover:text-mishita-blue">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for message display (since alerts are disallowed) -->
+    <script>
+        function showMessage(msg) {
+            const msgBox = document.getElementById('message-box');
+            msgBox.textContent = msg;
+            msgBox.classList.remove('hidden');
+            setTimeout(() => {
+                msgBox.classList.add('hidden');
+                msgBox.textContent = '';
+            }, 3000); // Hide after 3 seconds
+        }
+    </script>
+</body>
+</html>
